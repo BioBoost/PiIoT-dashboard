@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [],
+	"datasources": [
+		{
+			"name": "LabIct",
+			"type": "paho_mqtt_js",
+			"settings": {
+				"server": "mqtt.labict.be",
+				"port": 1884,
+				"client_id": "eewrtt3546546",
+				"topics": "say/hello"
+			}
+		}
+	],
+	"columns": 3
+}

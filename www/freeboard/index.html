@@ -26,8 +26,14 @@
                                     freeboard.setEditing(false);
                                 });
                             });
+                        } else {
+                          var default_board = "dashboards/default.json";
+                          $.getJSON(default_board, function(data) {
+                              freeboard.loadDashboard(data, function() {
+                                  freeboard.setEditing(true);
+                              });
+                          });
                         }
-
                     });
                 });
     </script>
